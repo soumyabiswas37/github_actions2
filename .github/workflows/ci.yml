@@ -19,7 +19,7 @@ jobs:
               run: node --version
 
             - name: "Clone the repository"
-              run: sudo git clone https://github.com/soumyabiswas37/github_actions2.git
+              uses: actions/checkout@v2 
 
             - name: "Checking the directories"
               run: ls -lrt github_actions2/
