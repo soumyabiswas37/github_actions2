@@ -10,9 +10,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: "Setup NodeJS"
-              uses: actions/setup-node@v4
-              with:
-                node-version: 21
+            #   uses: actions/setup-node@v4
+            #   with:
+            #     node-version: 21
+              run: apt install node -y
             
             - name: "Check node version"
               run: node --version
@@ -22,9 +23,6 @@ jobs:
 
             - name: "Checking the directories"
               run: ls -lrt
-
-            - name: "Adding blank file"
-              run: touch .npmignore
 
             - name: "Install dependencies"
               run: npm install
