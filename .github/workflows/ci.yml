@@ -17,8 +17,8 @@ jobs:
             - name: "Check node version"
               run: node --version
 
-            - name: "Installing Git"
-              run: sudo apt install git -y
-
             - name: "Clone the repository"
               run: sudo git clone https://github.com/soumyabiswas37/github_actions2.git
+
+            - name: "Checking the directories"
+              run: ls -lrt
