@@ -23,5 +23,8 @@ jobs:
             - name: "Checking the directories"
               run: ls -lrt
 
+            - name: "Adding blank file"
+              run: touch .npmignore
+
             - name: "Install dependencies"
               run: npm install
