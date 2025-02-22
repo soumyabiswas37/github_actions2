@@ -16,3 +16,6 @@ jobs:
             
             - name: "Check node version"
               run: node --version
+
+            - name: "Clone the repository"
+              run: sudo git clone https://github.com/soumyabiswas37/github_actions2.git
